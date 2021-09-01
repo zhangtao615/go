@@ -17,4 +17,8 @@ func main() {
 	slice_4 := []int{1, 2, 3}
 	slice_4 = append(slice_4, 4, 5)
 	fmt.Print(slice_4) // [1 2 3 4 5]
+	// 删除
+	slice_5 := []int{1, 2, 3, 4, 5, 6, 7, 8}
+	//删除尾部 2 个元素
+	fmt.Printf("len=%d cap=%d slice=%v\n", len(slice_5[:len(slice_5)-2]), cap(slice_5[:len(slice_5)-2]), slice_5[:len(slice_5)-2]) // len=6 cap=8 slice=[1 2 3 4 5 6]
 }
